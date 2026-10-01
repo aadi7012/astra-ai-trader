@@ -1,0 +1,10 @@
+.git
+.venv
+venv
+__pycache__
+*.py[cod]
+trade_ledger.json
+trade_ledger.json.*
+*.csv
+.env
+.env.*

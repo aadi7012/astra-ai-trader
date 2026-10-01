@@ -1,0 +1,19 @@
+services:
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: astra-ai-trader-tests
+    network_mode: none
+
+  ollama:
+    image: ollama/ollama:latest
+    profiles: ["ai"]
+    ports:
+      - "127.0.0.1:11434:11434"
+    volumes:
+      - ollama-models:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  ollama-models:

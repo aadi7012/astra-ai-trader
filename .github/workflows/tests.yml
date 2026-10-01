@@ -1,0 +1,26 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  windows-tests:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - name: Compile Python modules
+        run: >-
+          python -m py_compile app.py account_display.py backtest.py
+          binance_permissions.py binance_testnet.py credential_store.py
+          desktop_alerts.py instance_lock.py ledger_storage.py local_ai.py
+          market_chart.py market_scanner.py trade_history.py trade_ledger.py
+          trading_engine.py test_trading.py
+      - name: Run unit tests
+        run: python -m unittest discover -v -s . -p "test_*.py"
