@@ -1,10 +1,15 @@
 # Astra AI Trader
 
-A Windows desktop prototype for local-AI-assisted Binance Spot market analysis
-and user-authorized automation. It has separate Testnet and production API
-clients; **LIVE mode sends real Binance Spot orders** after explicit in-app
-confirmation. This is not investment advice or a profitability claim.
-Automated trading can lose some or all of the funds in the account.
+[![Tests](https://github.com/aadi7012/astra-ai-trader/actions/workflows/tests.yml/badge.svg)](https://github.com/aadi7012/astra-ai-trader/actions/workflows/tests.yml)
+![Windows desktop](https://img.shields.io/badge/platform-Windows%2010%2F11-0078D4)
+![Binance Spot](https://img.shields.io/badge/market-Binance%20Spot-F0B90B)
+![Local AI](https://img.shields.io/badge/local%20AI-Ollama-111827)
+
+A Windows desktop **AI crypto trading bot** for Binance Spot market analysis,
+local Ollama AI, liquid-market scanning, backtesting, and user-authorized
+automation. Start with Binance Spot Testnet; production Spot orders require
+separate confirmation. **LIVE mode sends real orders** and can lose money.
+This project makes no investment advice or profitability claims.
 
 > **Read before running:** This project has not demonstrated a profitable
 > strategy and is not production-ready. Start with Testnet. Passing tests and
@@ -32,6 +37,26 @@ not imply endorsement by Binance or Ollama.
 There is intentionally **no license file**. The source may be viewed on
 GitHub, but no permission to copy, modify, redistribute, or use it is granted
 by this publication. Contact the repository owner to request permission.
+
+### Screenshots
+
+The dashboard combines Testnet account status, AI analysis, market scanning,
+and live-price display. The connection tab holds exchange configuration and
+risk settings.
+
+| Testnet trading dashboard | Connection and risk settings |
+| --- | --- |
+| ![Astra AI Trader dashboard showing Binance Spot Testnet market data, AI HOLD analysis, and the liquid-pair scanner](docs/screenshots/dashboard-testnet.png) | ![Astra AI Trader connection and risk settings in Binance Spot Testnet mode](docs/screenshots/settings-testnet.png) |
+
+Screenshots show a specific Testnet session and are illustrative, not
+recommended trading settings or evidence of profitability. The settings image
+displays a configured Testnet order cap; choose your own limits. API credential
+fields are masked.
+
+**GitHub topics:** `ai-trading`, `crypto-trading`, `trading-bot`,
+`binance-spot`, `binance-testnet`, `local-ai`, `ollama`, `python`,
+`windows-desktop`, `automated-trading`, `market-scanner`, `backtesting`,
+`risk-management`.
 
 ## Current status
 

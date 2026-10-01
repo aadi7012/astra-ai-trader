@@ -355,7 +355,20 @@ execution, profitability, or end-to-end installer behavior. See
 
 ## Screenshots
 
-No screenshots are included in this source guide. The native desktop cannot be
-captured safely from this documentation workflow; use the dashboard labels
-and steps above rather than relying on an unverified or account-specific
-screenshot.
+### Dashboard and market scanner
+
+![Astra AI Trader Binance Spot Testnet dashboard with market price, AI analysis, and scanner](docs/screenshots/dashboard-testnet.png)
+
+This example shows Testnet mode, live-price display, and an AI `HOLD` result.
+The scanner status says an eligible candidate is being reviewed; a candidate
+or a changing price does not mean an order has been submitted. Read the
+Activity result for the final decision and execution checks.
+
+### Connection and risk settings
+
+![Astra AI Trader connection and risk settings in Testnet mode](docs/screenshots/settings-testnet.png)
+
+This is a Testnet configuration example. The displayed order cap is specific
+to the captured session and is **not** a suggested amount. Set limits based on
+your own test configuration. API key and secret fields are masked in the
+image; never publish an unmasked screenshot or real credentials.
